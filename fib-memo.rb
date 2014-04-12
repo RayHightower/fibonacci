@@ -1,20 +1,20 @@
 # Fibonacci numbers WITH memoization.
 
 # Initialize the memoization array.
-@fib_array = Array.new
+@scratchpad = Array.new
 (1..40).each do |i|
-  @fib_array[i] = :notcalculated
+  @scratchpad[i] = :notcalculated
 end
 
 # Calculate the nth Fibonacci number, f(n).
 def fib (n)
   if n <= 1
     return n
-  elsif @fib_array[n] != :notcalculated
-    return @fib_array[n]
+  elsif @scratchpad[n] != :notcalculated
+    return @scratchpad[n]
   else
-    @fib_array[n] = fib(n-1) + fib(n-2)
-    return @fib_array[n]
+    @scratchpad[n] = fib(n-1) + fib(n-2)
+    return @scratchpad[n]
   end
 end
 
