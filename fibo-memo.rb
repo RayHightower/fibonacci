@@ -2,13 +2,16 @@
 
 # Initialize the memoization array.
 @scratchpad = []
-(1..40).each do |i|
+@max_fibo_size = 40
+(1..@max_fibo_size).each do |i|
   @scratchpad[i] = :notcalculated
 end
 
 # Calculate the nth Fibonacci number, f(n).
 def fibo (n)
-  if n <= 1
+  if n > @max_fibo_size
+    return "n must be #{@max_fibo_size} or less."
+  elsif n <= 1
     return n
   elsif @scratchpad[n] != :notcalculated
     return @scratchpad[n]
