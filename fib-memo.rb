@@ -1,7 +1,7 @@
 # Fibonacci numbers WITH memoization.
 
 # Initialize the memoization array.
-@scratchpad = Array.new
+@scratchpad = []
 (1..40).each do |i|
   @scratchpad[i] = :notcalculated
 end
