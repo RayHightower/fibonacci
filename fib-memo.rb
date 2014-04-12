@@ -1,5 +1,10 @@
 # Calculating Fibonacci numbers WITH memoization.
-@fib_array[1..100] = -1
+
+# Initialize the memoization array.
+(1..20).each do |i|
+  @fib_array[i] = -1
+end
+
 
 def fib (n)
   if n <= 1
