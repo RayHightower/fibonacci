@@ -1,4 +1,6 @@
-# Calculating Fibonacci numbers WITHOUT memoization.
+# Fibonacci numbers WITHOUT memoization.
+
+# Calculate the nth Fibonacci number, f(n).
 def fib (n)
   if n <= 1
     return n
@@ -8,11 +10,7 @@ def fib (n)
   end
 end
 
-def phi(n)
-  value = fib(n).to_f/fib(n-1)
-  return value
-end
-
+# Display the Fibonacci sequence.
 (1..40).each do |number|
-  puts "fib(#{number}) = #{fib(number)}, phi = #{phi(number)}"
+  puts "fib(#{number}) = #{fib(number)}"
 end
