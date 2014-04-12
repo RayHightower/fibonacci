@@ -19,6 +19,6 @@ def fib (n)
 end
 
 # Display the Fibonacci sequence.
-(1..40).each do |number|
+(1..50).each do |number|
   puts "fib(#{number}) = #{fib(number)}"
 end
