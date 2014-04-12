@@ -1,9 +1,13 @@
-# Calculating Fibonacci numbers WITHOUT memoization.
+# Calculating Fibonacci numbers WITH memoization.
+@fib_array[1..100] = -1
+
 def fib (n)
   if n <= 1
     return n
+  elsif @fib_array[n] != -1
+    return @fib_array[n]
   else
-    value = fib(n-1) + fib(n-2)
+    @fib_array[n] = fib(n-1) + fib(n-2)
     return value
   end
 end
