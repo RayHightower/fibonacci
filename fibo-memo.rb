@@ -2,7 +2,7 @@
 
 # Initialize the memoization array.
 @scratchpad = []
-@max_fibo_size = 40
+@max_fibo_size = 50
 (1..@max_fibo_size).each do |i|
   @scratchpad[i] = :notcalculated
 end
