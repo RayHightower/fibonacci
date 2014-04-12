@@ -1,6 +1,6 @@
 def fib (n)
-  if n == 0 or n ==1
-    return 1
+  if n <= 1
+    return n
   else
     value = fib(n-1) + fib(n-2)
     return value
@@ -12,6 +12,6 @@ def phi(n)
   return value
 end
 
-(1..20).each do |number|
+(0..20).each do |number|
   puts "fib(#{number}) = #{fib(number)}, phi = #{phi(number)}"
 end
