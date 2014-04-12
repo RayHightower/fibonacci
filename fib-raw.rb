@@ -13,6 +13,6 @@ def phi(n)
   return value
 end
 
-(1..20).each do |number|
+(1..40).each do |number|
   puts "fib(#{number}) = #{fib(number)}, phi = #{phi(number)}"
 end
