@@ -1,6 +1,7 @@
 # Calculating Fibonacci numbers WITH memoization.
 
 # Initialize the memoization array.
+@fib_array = Array.new
 (1..20).each do |i|
   @fib_array[i] = -1
 end
@@ -13,7 +14,7 @@ def fib (n)
     return @fib_array[n]
   else
     @fib_array[n] = fib(n-1) + fib(n-2)
-    return value
+    return @fib_array[n]
   end
 end
 
