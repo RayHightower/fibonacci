@@ -7,18 +7,18 @@
 end
 
 # Calculate the nth Fibonacci number, f(n).
-def fib (n)
+def fibo (n)
   if n <= 1
     return n
   elsif @scratchpad[n] != :notcalculated
     return @scratchpad[n]
   else
-    @scratchpad[n] = fib(n-1) + fib(n-2)
+    @scratchpad[n] = fibo(n-1) + fibo(n-2)
     return @scratchpad[n]
   end
 end
 
 # Display the Fibonacci sequence.
 (1..50).each do |number|
-  puts "fib(#{number}) = #{fib(number)}"
+  puts "fibo(#{number}) = #{fibo(number)}"
 end
