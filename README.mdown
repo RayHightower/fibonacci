@@ -1,6 +1,6 @@
 Fibonacci and Memoization
 ===
-Sample code mentioned in the [Recursion and Memoization](http://rayhightower.com/blog/2014/04/12/recursion-and-memoization/) blog post. Experiments with a Fibonacci routine, before and after memoization.
+Sample code mentioned in the [Recursion and Memoization](http://rayhightower.com/blog/2014/04/12/recursion-and-memoization/) blog post. This is a comparison of two recursive Fibonacci programs written in Ruby. One uses memoization, and the other does not.
 
 By definition...
 
