@@ -1,6 +1,6 @@
 Fibonacci and Memoization
 ===
-Experiments with a Fibonacci routine, before and after memoization.
+Sample code mentioned in the [Recursion and Memoization](http://rayhightower.com/blog/2014/04/12/recursion-and-memoization/) blog post. Experiments with a Fibonacci routine, before and after memoization.
 
 By definition...
 
