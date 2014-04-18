@@ -1,6 +1,7 @@
-# Simplified array initialization proposed by Bhu (full name unknown)
+# Simplified @scratchpad[] array initialization proposed by Bhu (full name unknown)
 # Posted within comments at http://rayhightower.com/blog/2014/04/12/recursion-and-memoization/
 #
+@max_fibo_size = 50
 
 @scratchpad = Array.new(50, :notcalculated)
 
