@@ -1,23 +1,16 @@
-# Fibonacci numbers WITH memoization.
-
-# Initialize the memoization array.
-@scratchpad = []
-@max_fibo_size = 100
-(1..@max_fibo_size).each do |i|
-  @scratchpad[i] = :notcalculated
-end
+# Fibonacci numbers WITHOUT memoization.
 
 # Calculate the nth Fibonacci number, f(n).
 def fibo (n)
-  if n > @max_fibo_size
-    return "n must be #{@max_fibo_size} or less."
-  elsif n <= 1
-    return n
-  elsif @scratchpad[n] != :notcalculated
-    return @scratchpad[n]
-  else
-    @scratchpad[n] = fibo(n-1) + fibo(n-2)
-    return @scratchpad[n]
+  @fibo_cache ||= {}
+  @fibo_cache.fetch(n) do
+    if n <= 1
+      value = n
+    else
+      value = fibo(n-1) + fibo(n-2)
+    end
+
+    @fibo_cache[n] = value
   end
 end
 
