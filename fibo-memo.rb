@@ -1,4 +1,4 @@
-# Fibonacci numbers WITHOUT memoization.
+# Fibonacci numbers WITH memoization.
 
 # Calculate the nth Fibonacci number, f(n).
 def fibo (n)
