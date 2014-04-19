@@ -3,7 +3,7 @@
 #
 @max_fibo_size = 50
 
-@scratchpad = Array.new(50, :notcalculated)
+@scratchpad = Array.new(@max_fibo_size, :notcalculated)
 
 # Calculate the nth Fibonacci number, f(n).
 def fibo (n)
