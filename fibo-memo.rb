@@ -26,10 +26,10 @@ end
   puts "fibo(#{number}) = #{fibo(number)}"
 end
 
-# Display 50 Fibonacci numbers in a random sequence.
-number_of_values = 100
-puts "\nNow, display #{number_of_values} Fibonacci numbers in random sequence..."
-number_of_values.times do
-  number = (rand*number_of_values + 1).to_i
-  puts "fibo(#{number}) = #{fibo(number)}"
-end
+# # Display 50 Fibonacci numbers in a random sequence.
+# number_of_values = 100
+# puts "\nNow, display #{number_of_values} Fibonacci numbers in random sequence..."
+# number_of_values.times do
+#   number = (rand*number_of_values + 1).to_i
+#   puts "fibo(#{number}) = #{fibo(number)}"
+# end
