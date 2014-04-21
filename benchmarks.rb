@@ -4,7 +4,7 @@ require './fibo-raw'
 require './fibo-memo'
 require './fibo-tr'
 
-max = 10
+max = 30
 
 Benchmark.bmbm do |b|
   b.report('RawFibo') do
