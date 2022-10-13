@@ -1,6 +1,6 @@
 Fibonacci and Memoization
 ===
-Sample code mentioned in the [Recursion and Memoization](http://rayhightower.com/blog/2014/04/12/recursion-and-memoization/) blog post. This is a comparison of two recursive Fibonacci programs (fibo-memo.rb and fibo-raw.rb) written in Ruby. One uses memoization, and the other does not.
+Sample code mentioned in the [Recursion and Memoization](http://rayhightower.com/blog/2014/04/12/recursion-and-memoization/) blog post. This is a comparison of two recursive Fibonacci programs (blogpost_fibo_memo.rb and blogpost_fibo_raw.rb) written in Ruby. One uses memoization, and the other does not.
 
 The remaining Ruby programs in this repo were written by other developers, noted in each file. Each looks at the problem in a different way.
 
